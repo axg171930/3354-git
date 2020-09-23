@@ -12,9 +12,18 @@ public class Main {
     }
 
     private static int addArguments(String[] args) {
-        int sum = Integer.parseInt(args[0]) + Integer.parseInt(args[1]);
-	for(int i = 2; i < args.length; i++)
-		sum+=Integer.parseInt(args[i]);
-return sum;
-    }
-}
+       int flag=0,index=0,sum=0;
+       if(args[0].equals("-"))
+       {
+           flag=1;
+           index=1;
+       }
+       for(int i=index;i<args.length;i++){
+           if(flag==0)
+               sum+=Integer.valueOf(args[i]) ;
+           if(flag==1)
+               sum-=Integer.valueOf(args[i]) ;
+
+       }
+       return sum;
+   }

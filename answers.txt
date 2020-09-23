@@ -1,0 +1,17 @@
+(a) 2 commits
+
+(b) The file named .gitignore was never added
+
+(c) git log command displays commited snapshots. 
+    And got status lets you inspect the working directory and 
+    staging area.
+
+(d) An untracked file exists in the working tree of the repository 
+    but it is not listed in the index. An unstaged file is listed 
+    in the index, but the contents in the working tree are 
+    different from the contents listed in the index.
+
+(e) git checkout is updating the working tree and 
+    git rest is specifically about updating the index.
+
+(f) Nothing will happen since they are not comitted. 

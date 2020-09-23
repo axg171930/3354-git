@@ -5,10 +5,15 @@ public class Main {
     public static void main(String[] args) {
         try {
             int result = addArguments(args);
-            System.out.println(result);
-        } catch (Exception e) {
+		 if(args.length == 0)
+				throe new ArrayIndexOutOfBoundsException();
+		  System.out.println(result)
+        } catch (ArrayIndexOutOfBoundsException e) {
             System.err.println("Please provide two integers to add");
         }
+		catch(NumberFormatException n){
+			System.out.println("Invalid characters");
+		}
     }
 
     private static int addArguments(String[] args) {
